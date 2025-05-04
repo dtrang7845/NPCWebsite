@@ -1,0 +1,177 @@
+/* Base Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.bold{
+    font-weight:100
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #c00;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px 10px 0;
+    transition: all 0.3s ease;
+}
+
+.btn-github {
+    background-color: #c00;
+    color: white;
+}
+
+.btn-github:hover {
+    background-color: #a00;
+}
+
+.btn-download {
+    background-color: #0066cc;
+    color: white;
+}
+
+.btn-download:hover {
+    background-color: #0055aa;
+}
+
+.btn-download-tmlanguage {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.code-example {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.filename {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.string {
+    color: #e6db74;
+}
+
+.terminal {
+    background: #000;
+    color: #0f0;
+}
+
+
+.installation-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.installation-steps ol {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.folder-path {
+    font-family: monospace;
+    background: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.mystery-link {
+    color: #c00;
+    text-decoration: none;
+}
+
+.mystery-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.arnold-quote {
+    font-family: 'Orbitron', sans-serif;
+    color: #c00;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.arnold-quote footer {
+    border-top: none;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .installation-steps {
+        flex-direction: column;
+    }
+    
+    .installation-steps ol {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .arnold-quote {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

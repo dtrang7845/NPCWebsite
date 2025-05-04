@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>NPC</title>
+    <meta name="description" content="NPC language">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="d8500ddf.favicon.ico">
+    <link rel="stylesheet" href="styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>NPC</h1>
+            <p class="slogan">A programming language for interactive dialogue creation for characters including dynamic AI and static interaction</p>
+            
+            <div class="buttons">
+                <a href="https://github.com/dtrang7845/NPC" class="btn btn-github">More on Github</a>
+            </div>
+        </header>
+        
+        <main>
+            <section class="example-section">
+                <h2>Try it yourself</h2>
+                <div class="code-example">
+                    <div class="filename">sample.npc</div>
+                    <pre><code> <span class="string">npc</span> "Math Nerd" {
+        traits =[smart, nerdy]
+        dialogue = {
+                on "hello": "Hi, is there a problem I can help you solve?" -> fix_glasses
+                fallback: ai("respond to what it says")
+        }
+    }</code></pre>
+                    
+                    <pre class="terminal"><code> python3 npc.py sample.npc</code></pre>
+                </div>
+            </section>
+            
+            <section class="sublime-section">
+                <h2>Steps To Usage</h2>                
+                <div class="installation-steps">
+                    <ol>
+                        <li>First, download Ollama on the Ollama website</li>
+                        <a href="https://ollama.com">https://ollama.com</a>
+                        </li>
+                        <li>
+                            <br>Run this in the terminal after download:</br>
+                            <span class="folder-path">ollama pull llama3</span>
+                        </li>
+                        <li>
+                            <br>Now download the interpreter file via Github(npc.py). That's it! And you are ready to write in the NPC language</br>
+                            <b>MAKE SURE THE INTERPRETER FILE IS IN THE SAME DIRECTORY AS .NPC file YOU PLAN ON WRITING</b>
+                        </li>
+                    </ol>
+                    
+
+                </div>
+            </section>
+        </main>
+        
+       
+    </div>
+
+</body>
+</html>
